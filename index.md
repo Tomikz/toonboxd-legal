@@ -12,11 +12,31 @@ Toonboxd est une application iPhone pour suivre ta lecture de manhwas, manhuas e
 
 Paul Maxime Nadin, entrepreneur individuel (SIREN 991987819), France. C'est le responsable du traitement au sens du RGPD. Il n'y a pas de délégué à la protection des données : la taille de l'activité ne l'impose pas.
 
+Pour toute question ou demande sur tes données : contact@toonboxd.app.services/profileService.ts. Le fichier de consignes le dit maintenant, mais un commentaire au site le dirait là où la question se posera. C'est une ligne, dans son propre
+commit, si tu la veux.
+
+Avant de coller : les trois passages RevenueCat viennent d'une lecture de ta page publiée, donc si ma transcription a dérapé, la recopie écraserait ta correction. Ils se relisent d'un coup d'oeil contre la page.
+
+---
+title: Politique de confidentialité de Toonboxd
+---
+
+# Politique de confidentialité de Toonboxd
+
+Dernière mise à jour : 3 septembre 2026.
+
+Toonboxd est une application iPhone pour suivre ta lecture de manhwas, manhuas et webtoons. Cette page dit ce que l'app sait de toi, où ça va, et ce que tu peux en faire.
+
+## Qui en répond
+
+Paul Maxime Nadin, entrepreneur individuel (SIREN 991987819), France. C'est le responsable du traitement au sens du RGPD. Il n'y a pas de délégué à la protection des données : la taille de l'activité ne l'impose pas.
+
 Pour toute question ou demande sur tes données : contact@toonboxd.app.
 
 ## En une phrase
 
-Toonboxd n'affiche pas de publicité, ne pratique aucun suivi publicitaire, et ne vend ni ne loue rien de ce qu'il sait de toi. Ce qu'il collecte sert à faire marcher l'app et à comprendre comment elle est utilisée. Le détail suit.
+Toonboxd n'affiche pas de publicité, ne pratique aucun suivi publicitaire, et ne vend ni ne loue rien de ce qu'il sait de toi. Ce qu'il collecte sert à faire marcher l'app et à
+comprendre comment elle est utilisée. Le détail suit.
 
 ## Ce que Toonboxd garde sur toi
 
@@ -29,6 +49,8 @@ Toonboxd n'affiche pas de publicité, ne pratique aucun suivi publicitaire, et n
 **Tes mémos de reprise.** Le texte que tu écris quand tu mets une série en pause. Il est privé : personne d'autre que toi ne le voit, et il ne quitte pas notre base.
 
 **Ton pseudo.** Celui que tu choisis sur ton profil, si tu en choisis un. Aujourd'hui, personne d'autre ne le voit. Il est conçu pour devenir public le jour où les profils s'ouvriront ; cette page sera mise à jour à ce moment.
+
+**Si tu fais partie des bêta-testeurs.** Nous notons la date à laquelle tu l'es devenu. Elle sert à t'attribuer un titre « Bêta-testeur » sur ton profil le jour où les profils s'ouvriront ; aujourd'hui, rien dans l'app ne l'affiche. Elle est posée à la main sur ton compte et tu ne peux pas te l'attribuer toi-même. Si tu supprimes ton compte, elle part avec lui : nous ne gardons rien qui permette de te la rendre, et il faudra nous le dire pour que nous la reposions.
 
 **Tes suggestions de titres.** Le titre que tu proposes, et le lien ou la note que tu ajoutes éventuellement.
 
@@ -59,7 +81,7 @@ Six services reçoivent des données depuis ton téléphone. Pour chacun : à qu
 ### PostHog : l'analyse d'usage
 
 - Rôle : nous dire comment l'app est utilisée (quels écrans, quelles actions), pour l'améliorer.
-- Reçoit : tes actions dans l'app (ajout ou retrait d'une série, changement de statut ou de chapitre, écran ouvert, achat), avec l'identifiant de la série concernée ; **le texte de ta recherche quand elle ne donne aucun résultat** ; la version de l'app, la langue et le fuseau horaire de ton téléphone, la taille de l'écran, le type d'appareil ; le fait que tu es abonné ou non. Le tout est rangé sous ton identifiant de compte. Il ne reçoit jamais tes mémos, ton pseudo ni tes suggestions.
+- Reçoit : tes actions dans l'app (ajout ou retrait d'une série, changemenécran ouvert, achat), avec l'identifiant de la série concernée ; **le texte de ta recherche quand elle ne donne aucun résultat** ; la version de l'app, la langue et le fuseau horaire de ton téléphone, la taille de l'écran, le type d'appareil ; le fait que tu es abonné ou non. Le tout est rangé sous ton identifiant de compte. Il ne reçoit jamais tes mémos, ton pseudo ni tes suggestions.
 - Hébergement : Union européenne.
 - Adresse IP : comme tout serveur, PostHog reçoit l'adresse IP de ton téléphone à chaque envoi. Ce qu'il en garde dépend d'un réglage que nous n'avons pas encore vérifié.
 
@@ -83,7 +105,8 @@ Six services reçoivent des données depuis ton téléphone. Pour chacun : à qu
 
 ### Apple : la connexion et le paiement
 
-Connexion avec Apple et l'achat passent par Apple. Ce qu'Apple fait de ces opérations relève de sa propre politique. Ce qui nous revient : un jeton d'identité quand tu lies ton compte, et un reçu quand tu achètes.
+Connexion avec Apple et l'achat passent par Apple. Ce qu'Apple fait de ces opérations relève de sa propre politique. Ce qui nous revient : un jeton d'identité quand tu lies ton
+compte, et un reçu quand tu achètes.
 
 ### Deux choses sans service
 
@@ -100,7 +123,7 @@ Si un jour nous faisons de la publicité pour Toonboxd et voulons mesurer d'où 
 
 **Où.** Dans l'app : Réglages, section Compte, « Supprimer mon compte ». Un écran dit ce qui part et ce qui reste, puis l'app demande « Supprimer ton compte ? ».
 
-**Ce qui part, tout de suite et pour de bon.** Tout ce que Toonboxd stocke sur toi : ton compte, ta bibliothèque, tes notes, tes mémos, ton pseudo, tes signalements, et l'adresse Apple si tu avais lié ton compte.
+**Ce qui part, tout de suite et pour de bon.** Tout ce que Toonboxd stocke sur toi : ton compte, ta bibliothèque, tes notes, tes mémos, ton pseudo, tes signalements, ta date de bêta-testeur si tu en avais une, et l'adresse Apple si tu avais lié ton compte.
 
 **Ce qui reste.**
 
@@ -108,7 +131,7 @@ Si un jour nous faisons de la publicité pour Toonboxd et voulons mesurer d'où 
 - Ton abonnement, s'il existe. Il se gère dans les réglages Apple, et la suppression ne le résilie pas.
 - La liaison à ton identifiant Apple, côté Apple. Tu la retires toi-même dans les réglages iOS, sous ton nom, puis Connexion avec Apple.
 
-**Ce que la suppression ne fait pas.** Elle n'efface pas ce qui a déjà été envoyé aux services d'analyse. PostHog et Firebase gardent les événements reçus, rangés sous ton identifiant. Pour les effacer :
+**Ce que la suppression ne fait pas.** Elle n'efface pas ce qui a déjà étése. PostHog et Firebase gardent les événements reçus, rangés sous tonidentifiant. Pour les effacer :
 
 1. Note ton identifiant. L'app l'affiche dans les Réglages (« Ton identifiant »), et l'écran qui confirme la suppression l'affiche une dernière fois.
 2. Envoie-le à contact@toonboxd.app en demandant l'effacement.
@@ -137,6 +160,7 @@ Pour exercer un droit : un mail à contact@toonboxd.app avec ton identifiant (R�
 
 La date en tête change, et la liste ci-dessous dit ce qui a changé. L'historique complet de cette page est public dans le dépôt qui l'héberge : chaque version reste lisible.
 
+- 3 septembre 2026 : une donnée de plus si tu es bêta-testeur, la date à laquelle tu l'es devenu.
 - 3 septembre 2026 : RevenueCat identifie désormais par l'identifiant de compte, une demande d'effacement y est donc possible.
 - 30 août 2026 : première version.
 
