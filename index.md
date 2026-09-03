@@ -4,7 +4,7 @@ title: Politique de confidentialité de Toonboxd
 
 # Politique de confidentialité de Toonboxd
 
-Dernière mise à jour : 30 août 2026.
+Dernière mise à jour : 3 septembre 2026.
 
 Toonboxd est une application iPhone pour suivre ta lecture de manhwas, manhuas et webtoons. Cette page dit ce que l'app sait de toi, où ça va, et ce que tu peux en faire.
 
@@ -78,7 +78,7 @@ Six services reçoivent des données depuis ton téléphone. Pour chacun : à qu
 ### RevenueCat : l'abonnement
 
 - Rôle : gère l'abonnement Pro, l'essai gratuit et la restauration des achats.
-- Reçoit : le reçu d'achat transmis par Apple, la formule choisie, un identifiant d'installation anonyme qu'il génère lui-même, et l'identifiant d'installation Firebase. Il ne reçoit pas ton identifiant de compte aujourd'hui. Le jour où ce lien existera, pour que ton abonnement te suive d'un iPhone à l'autre, cette page le dira.
+- Reçoit : le reçu d'achat transmis par Apple, la formule choisie, l'identifiant de ton compte Toonboxd (le même que pour l'analyse, pour que ton abonnement te suive quand tu retrouves ta bibliothèque sur un autre iPhone), et l'identifiant d'installation Firebase.
 - Hébergement : non vérifié à ce jour.
 
 ### Apple : la connexion et le paiement
@@ -114,7 +114,7 @@ Si un jour nous faisons de la publicité pour Toonboxd et voulons mesurer d'où 
 2. Envoie-le à contact@toonboxd.app en demandant l'effacement.
 3. Nous demandons l'effacement à PostHog et à Firebase dans le mois qui suit. Chaque service traite ensuite la demande à son rythme, que nous ne contrôlons pas.
 
-Sentry n'a rien qui te désigne, donc rien à effacer par personne. RevenueCat ne peut pas être relié à ton compte aujourd'hui, donc rien ne peut y être effacé à ton nom ; ton abonnement reste de toute façon chez Apple.
+Sentry n'a rien qui te désigne, donc rien à effacer par personne. RevenueCat range ton abonnement sous l'identifiant de ton compte : son effacement se demande de la même façon, avec cet identifiant, une fois l'abonnement terminé ; l'abonnement lui-même reste chez Apple et se résilie dans tes réglages Apple.
 
 ## Tes droits
 
@@ -137,6 +137,7 @@ Pour exercer un droit : un mail à contact@toonboxd.app avec ton identifiant (R�
 
 La date en tête change, et la liste ci-dessous dit ce qui a changé. L'historique complet de cette page est public dans le dépôt qui l'héberge : chaque version reste lisible.
 
+- 3 septembre 2026 : RevenueCat identifie désormais par l'identifiant de compte, une demande d'effacement y est donc possible.
 - 30 août 2026 : première version.
 
 ## Ce que cette page ne couvre pas
