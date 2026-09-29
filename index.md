@@ -4,7 +4,7 @@ title: Politique de confidentialité de Toonboxd
 
 # Politique de confidentialité de Toonboxd
 
-Dernière mise à jour : 4 septembre 2026.
+Dernière mise à jour : 29 septembre 2026.
 
 Toonboxd est une application iPhone pour suivre ta lecture de manhwas, manhuas et webtoons. Cette page dit ce que l'app sait de toi, où ça va, et ce que tu peux en faire.
 
@@ -26,11 +26,13 @@ Toonboxd n'affiche pas de publicité, ne pratique aucun suivi publicitaire, et n
 
 **Ta bibliothèque.** Les séries que tu suis, leur statut (en cours, en pause, prévue, terminée, abandonnée), le dernier chapitre lu, les dates d'ajout et de dernière modification, les séries que tu épingles, et la note que tu donnes à une série.
 
-**Tes mémos de reprise.** Le texte que tu écris quand tu mets une série en pause. Il est privé : personne d'autre que toi ne le voit, et il ne quitte pas notre base.
+**Tes mémos de reprise.** Le texte que tu écris quand tu mets une série en pause. Il est privé : personne d'autre que toi ne le voit, et il ne quitte pas notre base, pas même dans une notification.
 
 **Ton pseudo.** Celui que tu choisis sur ton profil, si tu en choisis un. **Il apparaît sur les listes que tu partages**, et nulle part ailleurs pour l'instant : personne ne le voit tant que tu n'as rien partagé. Il deviendra public le jour où les profils s'ouvriront ; cette page sera mise à jour à ce moment.
 
 **Le titre que tu portes.** Ton profil a une galerie de titres, que tu débloques en lisant : nous gardons celui que tu as choisi de porter, la date à laquelle chaque titre s'est débloqué chez toi et si tu l'as déjà vu dans ta galerie, et rien d'autre. Le choix vient de toi, il se change et il se retire quand tu veux. **Il apparaît sur les listes que tu partages**, sous ton pseudo, et nulle part ailleurs pour l'instant. Ce qui n'en sort jamais : la règle qui l'a débloqué et où tu en es de ta progression.
+
+**Ta bannière.** La bande en haut de ton profil se choisit parmi celles que l'app propose : nous gardons le nom de celle que tu as choisie, et rien d'autre. Le choix vient de toi et il se change quand tu veux ; tout le monde en a une, celle de départ compris. Elle n'apparaît nulle part ailleurs pour l'instant, pas même sur les listes que tu partages. Elle deviendra visible avec ton profil le jour où les profils s'ouvriront ; cette page sera mise à jour à ce moment.
 
 **Si tu fais partie des bêta-testeurs.** Nous notons la date à laquelle tu l'es devenu. Elle débloque un titre « Bêta-testeur » que tu peux choisir de porter, comme les autres ; **cette date, elle, ne sort jamais de nos serveurs**, même quand tu portes le titre qu'elle débloque. Elle est posée à la main sur ton compte et tu ne peux pas te l'attribuer toi-même. Si tu supprimes ton compte, elle part avec lui : nous ne gardons rien qui permette de te la rendre, et il faudra nous le dire pour que nous la reposions.
 
@@ -43,6 +45,8 @@ Toonboxd n'affiche pas de publicité, ne pratique aucun suivi publicitaire, et n
 **Tes suggestions de titres.** Le titre que tu proposes, et le lien ou la note que tu ajoutes éventuellement.
 
 **Tes signalements.** Quand tu signales qu'une série en pause a repris : la série et la date, rien d'autre.
+
+**Le jeton de notification de ton iPhone, si tu acceptes les notifications.** L'app ne te les propose qu'au moment où tu mets une série en pause pour la première fois, avec un écran qui explique pourquoi avant la question d'iOS. Si tu acceptes, nous gardons un jeton qui permet de t'écrire sur cet iPhone, fourni par Expo (plus bas), et le type d'appareil. Il sert à une seule chose : te prévenir quand une série que tu as mise en pause reprend. Si tu refuses, rien n'est gardé. Tu coupes les notifications quand tu veux dans les réglages iOS.
 
 **Ce que ta note devient.** Ta note sur une série entre dans une moyenne communautaire anonyme. Si tu retires ta note ou si tu supprimes ton compte, elle en est retirée.
 
@@ -58,7 +62,7 @@ Sur l'appareil, l'app garde ta session, tes réponses aux premiers écrans (nomb
 
 ## Les services que Toonboxd utilise
 
-Six services reçoivent des données depuis ton téléphone. Pour chacun : à quoi il sert, ce qu'il reçoit, où c'est hébergé.
+Six services reçoivent des données depuis ton téléphone, et un septième, Expo, en reçoit depuis ton téléphone et depuis nos serveurs pour acheminer les notifications. Pour chacun : à quoi il sert, ce qu'il reçoit, où c'est hébergé.
 
 ### Supabase : la base de données et les comptes
 
@@ -91,9 +95,17 @@ Six services reçoivent des données depuis ton téléphone. Pour chacun : à qu
 - Reçoit : le reçu d'achat transmis par Apple, la formule choisie, l'identifiant de ton compte Toonboxd (le même que pour l'analyse, pour que ton abonnement te suive quand tu retrouves ta bibliothèque sur un autre iPhone), et l'identifiant d'installation Firebase.
 - Hébergement : non vérifié à ce jour.
 
+### Expo : les notifications
+
+- Rôle : acheminer les notifications de Toonboxd jusqu'à ton iPhone, par le service de notification d'Apple.
+- Reçoit, depuis ton téléphone, si tu acceptes les notifications : le jeton de notification qu'Apple donne à ton iPhone, un identifiant d'installation que le composant d'Expo crée sur ton appareil et garde même après une réinstallation, et l'identifiant de l'app. En échange, Expo nous rend le jeton que nous gardons. Le composant renvoie ensuite ce jeton à Expo de lui-même, quand il change et tous les sept jours.
+- Reçoit, depuis nos serveurs, quand une série que tu as mise en pause reprend : ton jeton et le message, « {nom de la série} est de retour » puis « Tu l'avais mise en pause. Elle a repris. », avec l'identifiant de la série. **C'est une donnée de ta lecture qui sort de chez nous** : ce message dit qu'une série est dans tes pauses. Expo le transmet à Apple, qui l'affiche sur ton iPhone. Jamais ton mémo de reprise, ton pseudo ni ton identifiant de compte.
+- Ce qu'Expo et Apple gardent de ces messages : non vérifié à ce jour.
+- Hébergement : non vérifié à ce jour.
+
 ### Apple : la connexion et le paiement
 
-Connexion avec Apple et l'achat passent par Apple. Ce qu'Apple fait de ces opérations relève de sa propre politique. Ce qui nous revient : un jeton d'identité quand tu lies ton compte, et un reçu quand tu achètes.
+Connexion avec Apple et l'achat passent par Apple. Ce qu'Apple fait de ces opérations relève de sa propre politique. Ce qui nous revient : un jeton d'identité quand tu lies ton compte, et un reçu quand tu achètes. C'est aussi le service de notification d'Apple qui délivre les notifications à ton iPhone : il reçoit, par Expo, le message décrit ci-dessus.
 
 ### Deux choses sans service
 
@@ -110,13 +122,14 @@ Si un jour nous faisons de la publicité pour Toonboxd et voulons mesurer d'où 
 
 **Où.** Dans l'app : Réglages, section Compte, « Supprimer mon compte ». Un écran dit ce qui part et ce qui reste, puis l'app demande « Supprimer ton compte ? ».
 
-**Ce qui part, tout de suite et pour de bon.** Tout ce que Toonboxd stocke sur toi : ton compte, ta bibliothèque, tes notes, tes mémos, ton pseudo, tes signalements, ta date de bêta-testeur si tu en avais une, et l'adresse Apple si tu avais lié ton compte.
+**Ce qui part, tout de suite et pour de bon.** Tout ce que Toonboxd stocke sur toi : ton compte, ta bibliothèque, tes notes, tes mémos, ton pseudo, tes signalements, le jeton de notification de tes appareils, ta date de bêta-testeur si tu en avais une, et l'adresse Apple si tu avais lié ton compte.
 
 **Ce qui reste.**
 
 - Tes suggestions de titres, sans plus rien qui les relie à toi : elles servent le catalogue.
 - Ton abonnement, s'il existe. Il se gère dans les réglages Apple, et la suppression ne le résilie pas.
 - La liaison à ton identifiant Apple, côté Apple. Tu la retires toi-même dans les réglages iOS, sous ton nom, puis Connexion avec Apple.
+- Chez Expo, ce qu'il a reçu pour acheminer tes notifications. Nous ne savons pas encore ce qu'il en garde.
 
 **Ce que la suppression ne fait pas.** Elle n'efface pas ce qui a déjà été envoyé aux services d'analyse. PostHog et Firebase gardent les événements reçus, rangés sous ton identifiant. Pour les effacer :
 
@@ -139,14 +152,16 @@ Le RGPD te donne des droits sur tes données. Voici ce que chacun veut dire ici.
 
 Pour exercer un droit : un mail à contact@toonboxd.app avec ton identifiant (Réglages, section Compte, « Ton identifiant »). Sans lui, nous ne pouvons pas te retrouver : un compte anonyme n'a rien d'autre. Nous répondons dans le mois.
 
-**Sur quelle base.** Le compte, la bibliothèque et l'abonnement sont nécessaires au service que tu utilises. L'analyse d'usage et les rapports de plantage relèvent de notre intérêt légitime à comprendre et à réparer l'app.
+**Sur quelle base.** Le compte, la bibliothèque et l'abonnement sont nécessaires au service que tu utilises. L'analyse d'usage et les rapports de plantage relèvent de notre intérêt légitime à comprendre et à réparer l'app. Les notifications reposent sur ton accord, donné à iOS et retiré dans les réglages iOS.
 
-**Hors de l'Union européenne.** Google et RevenueCat peuvent héberger leurs données hors de l'UE ; nous n'avons pas encore vérifié où. Cette page sera précisée quand ce sera fait.
+**Hors de l'Union européenne.** Google, RevenueCat et Expo peuvent héberger leurs données hors de l'UE ; nous n'avons pas encore vérifié où. Cette page sera précisée quand ce sera fait.
 
 ## Si cette page change
 
 La date en tête change, et la liste ci-dessous dit ce qui a changé. L'historique complet de cette page est public dans le dépôt qui l'héberge : chaque version reste lisible.
 
+- 29 septembre 2026 : l'app peut te prévenir quand une série que tu as mise en pause reprend, par une notification que tu acceptes ou non. Expo apparaît parmi les services, avec ce qu'il reçoit, dont le nom de la série ; cette page aurait dû le nommer dès le 7 septembre, quand l'app a commencé à demander les notifications.
+- 5 septembre 2026 : tu choisis la bannière de ton profil, et nous gardons le nom de celle que tu as choisie. Elle ne sort pas de l'app pour l'instant.
 - 4 septembre 2026 : le titre que tu portes apparaît désormais sur les listes que tu partages, sous ton pseudo. La règle qui l'a débloqué et ta progression, elles, restent chez nous.
 - 4 septembre 2026 : tu peux partager une liste par un lien. La page dit ce qu'elle montre, à qui, et comment tu la retires ; ton pseudo y figure.
 - 3 septembre 2026 : une donnée de plus si tu es bêta-testeur, la date à laquelle tu l'es devenu.
