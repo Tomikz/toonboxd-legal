@@ -4,9 +4,9 @@ title: Politique de confidentialité de Toonboxd
 
 # Politique de confidentialité de Toonboxd
 
-Dernière mise à jour : 29 septembre 2026.
+Dernière mise à jour : 30 septembre 2026.
 
-Toonboxd est une application iPhone pour suivre ta lecture de manhwas, manhuas et webtoons. Cette page dit ce que l'app sait de toi, où ça va, et ce que tu peux en faire.
+Toonboxd est une application iPhone pour suivre ta lecture de manhwas, manhuas et webtoons. Cette page dit ce que l'app sait de toi, où ça va, et ce que tu peux en faire ; une section couvre aussi le site toonboxd.app.
 
 ## Qui en répond
 
@@ -42,11 +42,11 @@ Toonboxd n'affiche pas de publicité, ne pratique aucun suivi publicitaire, et n
 
 **Comment tu défais un partage.** Sur la liste, « Dépublier ». La page cesse aussitôt d'être consultable. Le lien, lui, reste le tien : si tu republies la même liste plus tard, il remarche. **Si tu supprimes la liste, le lien meurt pour de bon** et ne peut pas être rendu, même en recréant la même liste. Nous ne pouvons pas savoir qui a déjà ouvert un lien ni le reprendre à qui l'a reçu : c'est vrai de tout lien partagé, et c'est la seule chose à savoir avant de partager.
 
-**Tes suggestions de titres.** Le titre que tu proposes, et le lien ou la note que tu ajoutes éventuellement.
+**Tes suggestions de titres.** Le titre que tu proposes, et le lien ou la note que tu ajoutes éventuellement. Si nous ajoutons la série, elle arrive dans ta bibliothèque, en « Prévu », et nous te prévenons par une notification si tu les as acceptées.
 
 **Tes signalements.** Quand tu signales qu'une série en pause a repris : la série et la date, rien d'autre.
 
-**Le jeton de notification de ton iPhone, si tu acceptes les notifications.** L'app ne te les propose qu'au moment où tu mets une série en pause pour la première fois, avec un écran qui explique pourquoi avant la question d'iOS. Si tu acceptes, nous gardons un jeton qui permet de t'écrire sur cet iPhone, fourni par Expo (plus bas), et le type d'appareil. Il sert à une seule chose : te prévenir quand une série que tu as mise en pause reprend. Si tu refuses, rien n'est gardé. Tu coupes les notifications quand tu veux dans les réglages iOS.
+**Le jeton de notification de ton iPhone, si tu acceptes les notifications.** L'app ne te les propose qu'au moment où tu mets une série en pause pour la première fois, avec un écran qui explique pourquoi avant la question d'iOS. Si tu acceptes, nous gardons un jeton qui permet de t'écrire sur cet iPhone, fourni par Expo (plus bas), et le type d'appareil. Il sert à deux choses : te prévenir quand une série que tu as mise en pause reprend, et quand une série que tu as suggérée est ajoutée. Si tu refuses, rien n'est gardé. Tu coupes les notifications quand tu veux dans les réglages iOS.
 
 **Ce que ta note devient.** Ta note sur une série entre dans une moyenne communautaire anonyme. Si tu retires ta note ou si tu supprimes ton compte, elle en est retirée.
 
@@ -100,12 +100,13 @@ Six services reçoivent des données depuis ton téléphone, et un septième, Ex
 - Rôle : acheminer les notifications de Toonboxd jusqu'à ton iPhone, par le service de notification d'Apple.
 - Reçoit, depuis ton téléphone, si tu acceptes les notifications : le jeton de notification qu'Apple donne à ton iPhone, un identifiant d'installation que le composant d'Expo crée sur ton appareil et garde même après une réinstallation, et l'identifiant de l'app. En échange, Expo nous rend le jeton que nous gardons. Le composant renvoie ensuite ce jeton à Expo de lui-même, quand il change et tous les sept jours.
 - Reçoit, depuis nos serveurs, quand une série que tu as mise en pause reprend : ton jeton et le message, « {nom de la série} est de retour » puis « Tu l'avais mise en pause. Elle a repris. », avec l'identifiant de la série. **C'est une donnée de ta lecture qui sort de chez nous** : ce message dit qu'une série est dans tes pauses. Expo le transmet à Apple, qui l'affiche sur ton iPhone. Jamais ton mémo de reprise, ton pseudo ni ton identifiant de compte.
+- Reçoit, depuis nos serveurs, quand une série que tu as suggérée est ajoutée : ton jeton et le message, « {nom de la série} vient d'arriver » puis « Tu l'avais suggérée. Elle est arrivée et t'attend dans ta bibliothèque. », avec l'identifiant de la série. **Ce message dit que tu as suggéré cette série**, et il sort de chez nous comme le précédent. Jamais le texte de ta suggestion : le nom est celui de notre catalogue.
 - Ce qu'Expo et Apple gardent de ces messages : non vérifié à ce jour.
 - Hébergement : non vérifié à ce jour.
 
 ### Apple : la connexion et le paiement
 
-Connexion avec Apple et l'achat passent par Apple. Ce qu'Apple fait de ces opérations relève de sa propre politique. Ce qui nous revient : un jeton d'identité quand tu lies ton compte, et un reçu quand tu achètes. C'est aussi le service de notification d'Apple qui délivre les notifications à ton iPhone : il reçoit, par Expo, le message décrit ci-dessus.
+Connexion avec Apple et l'achat passent par Apple. Ce qu'Apple fait de ces opérations relève de sa propre politique. Ce qui nous revient : un jeton d'identité quand tu lies ton compte, et un reçu quand tu achètes. C'est aussi le service de notification d'Apple qui délivre les notifications à ton iPhone : il reçoit, par Expo, les messages décrits ci-dessus.
 
 ### Deux choses sans service
 
@@ -139,6 +140,12 @@ Si un jour nous faisons de la publicité pour Toonboxd et voulons mesurer d'où 
 
 Sentry n'a rien qui te désigne, donc rien à effacer par personne. RevenueCat range ton abonnement sous l'identifiant de ton compte : son effacement se demande de la même façon, avec cet identifiant, une fois l'abonnement terminé ; l'abonnement lui-même reste chez Apple et se résilie dans tes réglages Apple.
 
+## Sur le site toonboxd.app
+
+**Si tu laisses ton email pour être prévenu du lancement.** Le site propose de laisser ton adresse email pour recevoir un message le jour où Toonboxd arrive sur l'App Store. Nous gardons cette adresse et la date à laquelle tu l'as laissée, et rien d'autre : pas de nom, pas de compte, aucun lien avec l'app. Elle est stockée chez Supabase, à Paris, dans une table que ni le site ni l'app ne peuvent relire. Elle sert à une seule chose, ce message, et elle est effacée une fois qu'il est parti. Tu peux la faire retirer avant, sans raison à donner, en écrivant à contact@toonboxd.app depuis cette adresse. C'est ton accord, donné en envoyant le formulaire, qui nous y autorise, et tu le retires de la même façon.
+
+**Ce que le site charge.** Les couvertures des séries viennent de notre catalogue, chez Supabase, et s'affichent depuis AniList, qui les héberge : ton navigateur contacte donc ces deux services, comme sur une liste partagée. Le site ne dépose aucun cookie et ne mesure rien de ses visiteurs.
+
 ## Tes droits
 
 Le RGPD te donne des droits sur tes données. Voici ce que chacun veut dire ici.
@@ -160,6 +167,8 @@ Pour exercer un droit : un mail à contact@toonboxd.app avec ton identifiant (R�
 
 La date en tête change, et la liste ci-dessous dit ce qui a changé. L'historique complet de cette page est public dans le dépôt qui l'héberge : chaque version reste lisible.
 
+- 30 septembre 2026 : le site toonboxd.app propose de laisser ton email pour être prévenu du lancement. La section « Sur le site toonboxd.app » dit ce qui est gardé, où, et jusqu'à quand.
+- 30 septembre 2026 : quand une série que tu as suggérée est ajoutée, elle arrive dans ta bibliothèque, et l'app te prévient par une notification si tu les as acceptées. Expo reçoit alors le nom de cette série, comme pour une série en pause qui reprend.
 - 29 septembre 2026 : l'app peut te prévenir quand une série que tu as mise en pause reprend, par une notification que tu acceptes ou non. Expo apparaît parmi les services, avec ce qu'il reçoit, dont le nom de la série ; cette page aurait dû le nommer dès le 7 septembre, quand l'app a commencé à demander les notifications.
 - 5 septembre 2026 : tu choisis la bannière de ton profil, et nous gardons le nom de celle que tu as choisie. Elle ne sort pas de l'app pour l'instant.
 - 4 septembre 2026 : le titre que tu portes apparaît désormais sur les listes que tu partages, sous ton pseudo. La règle qui l'a débloqué et ta progression, elles, restent chez nous.
