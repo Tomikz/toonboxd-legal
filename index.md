@@ -34,6 +34,8 @@ Toonboxd n'affiche pas de publicité, ne pratique aucun suivi publicitaire, et n
 
 **Ta bannière.** La bande en haut de ton profil se choisit parmi celles que l'app propose : nous gardons le nom de celle que tu as choisie, et rien d'autre. Le choix vient de toi et il se change quand tu veux ; tout le monde en a une, celle de départ compris. Elle n'apparaît nulle part ailleurs pour l'instant, pas même sur les listes que tu partages. Elle deviendra visible avec ton profil le jour où les profils s'ouvriront ; cette page sera mise à jour à ce moment.
 
+**Le libellé de ta carte du top 5.** Ton profil montre la carte de ton top 5, avec en tête « Mon top 5 manhwa » ; tu peux écrire le tien à la place. Nous gardons le texte que tu écris, et rien d'autre : effacé, la carte reprend le libellé de départ, et nous ne gardons plus rien. Il n'apparaît que sur ton profil, que personne d'autre ne voit, et nulle part ailleurs pour l'instant, pas même sur les listes que tu partages. Il ne part vers aucun des services ci-dessous : l'analyse d'usage sait seulement que tu l'as changé, et si tu es revenu au libellé de départ. Le jour où tu pourras partager ta carte en image, il y figurera ; cette page sera mise à jour à ce moment.
+
 **Si tu fais partie des bêta-testeurs.** Nous notons la date à laquelle tu l'es devenu. Elle débloque un titre « Bêta-testeur » que tu peux choisir de porter, comme les autres ; **cette date, elle, ne sort jamais de nos serveurs**, même quand tu portes le titre qu'elle débloque. Elle est posée à la main sur ton compte et tu ne peux pas te l'attribuer toi-même. Si tu supprimes ton compte, elle part avec lui : nous ne gardons rien qui permette de te la rendre, et il faudra nous le dire pour que nous la reposions.
 
 **Tes listes.** Leur titre, leur description, et les séries que tu y mets dans l'ordre que tu composes. Une liste est privée à sa création, et elle le reste tant que tu ne la partages pas.
@@ -123,7 +125,7 @@ Si un jour nous faisons de la publicité pour Toonboxd et voulons mesurer d'où 
 
 **Où.** Dans l'app : Réglages, section Compte, « Supprimer mon compte ». Un écran dit ce qui part et ce qui reste, puis l'app demande « Supprimer ton compte ? ».
 
-**Ce qui part, tout de suite et pour de bon.** Tout ce que Toonboxd stocke sur toi : ton compte, ta bibliothèque, tes notes, tes mémos, ton pseudo, tes signalements, le jeton de notification de tes appareils, ta date de bêta-testeur si tu en avais une, et l'adresse Apple si tu avais lié ton compte.
+**Ce qui part, tout de suite et pour de bon.** Tout ce que Toonboxd stocke sur toi : ton compte, ta bibliothèque, tes notes, tes mémos, ton pseudo, le libellé de ta carte, tes signalements, le jeton de notification de tes appareils, ta date de bêta-testeur si tu en avais une, et l'adresse Apple si tu avais lié ton compte.
 
 **Ce qui reste.**
 
@@ -151,7 +153,7 @@ Sentry n'a rien qui te désigne, donc rien à effacer par personne. RevenueCat r
 Le RGPD te donne des droits sur tes données. Voici ce que chacun veut dire ici.
 
 - Accès : savoir ce que nous avons sur toi. Ta bibliothèque, tes notes et tes mémos sont dans l'app ; pour le reste, écris-nous.
-- Rectification : ton pseudo, ta bibliothèque, tes notes et tes mémos se modifient dans l'app.
+- Rectification : ton pseudo, le libellé de ta carte, ta bibliothèque, tes notes et tes mémos se modifient dans l'app.
 - Effacement : le bouton « Supprimer mon compte », puis la demande décrite ci-dessus pour l'analyse d'usage.
 - Portabilité : l'app n'a pas de fonction d'export. Sur demande, nous t'envoyons une copie de tes données dans un format lisible.
 - Opposition et limitation : pour l'analyse d'usage, sur demande. Il n'existe pas de réglage dans l'app pour la désactiver.
@@ -167,6 +169,7 @@ Pour exercer un droit : un mail à contact@toonboxd.app avec ton identifiant (R�
 
 La date en tête change, et la liste ci-dessous dit ce qui a changé. L'historique complet de cette page est public dans le dépôt qui l'héberge : chaque version reste lisible.
 
+- 30 septembre 2026 : tu peux écrire le libellé de la carte de ton top 5, et nous gardons ce texte. Il n'apparaît que sur ton profil, et ne sort pas de l'app pour l'instant.
 - 30 septembre 2026 : le site toonboxd.app propose de laisser ton email pour être prévenu du lancement. La section « Sur le site toonboxd.app » dit ce qui est gardé, où, et jusqu'à quand.
 - 30 septembre 2026 : quand une série que tu as suggérée est ajoutée, elle arrive dans ta bibliothèque, et l'app te prévient par une notification si tu les as acceptées. Expo reçoit alors le nom de cette série, comme pour une série en pause qui reprend.
 - 29 septembre 2026 : l'app peut te prévenir quand une série que tu as mise en pause reprend, par une notification que tu acceptes ou non. Expo apparaît parmi les services, avec ce qu'il reçoit, dont le nom de la série ; cette page aurait dû le nommer dès le 7 septembre, quand l'app a commencé à demander les notifications.
