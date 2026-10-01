@@ -4,7 +4,7 @@ title: Politique de confidentialité de Toonboxd
 
 # Politique de confidentialité de Toonboxd
 
-Dernière mise à jour : 30 septembre 2026.
+Dernière mise à jour : 1er octobre 2026.
 
 Toonboxd est une application iPhone pour suivre ta lecture de manhwas, manhuas et webtoons. Cette page dit ce que l'app sait de toi, où ça va, et ce que tu peux en faire ; une section couvre aussi le site toonboxd.app.
 
@@ -28,13 +28,15 @@ Toonboxd n'affiche pas de publicité, ne pratique aucun suivi publicitaire, et n
 
 **Tes mémos de reprise.** Le texte que tu écris quand tu mets une série en pause. Il est privé : personne d'autre que toi ne le voit, et il ne quitte pas notre base, pas même dans une notification.
 
-**Ton pseudo.** Celui que tu choisis sur ton profil, si tu en choisis un. **Il apparaît sur les listes que tu partages**, et nulle part ailleurs pour l'instant : personne ne le voit tant que tu n'as rien partagé. Il deviendra public le jour où les profils s'ouvriront ; cette page sera mise à jour à ce moment.
+**Ton pseudo.** Celui que tu choisis sur ton profil, si tu en choisis un. **Il apparaît sur les listes que tu partages, et sur l'image de ta carte du top 5 quand tu la partages**, et nulle part ailleurs pour l'instant : personne ne le voit tant que tu n'as rien partagé. Il deviendra public le jour où les profils s'ouvriront ; cette page sera mise à jour à ce moment.
 
 **Le titre que tu portes.** Ton profil a une galerie de titres, que tu débloques en lisant : nous gardons celui que tu as choisi de porter, la date à laquelle chaque titre s'est débloqué chez toi et si tu l'as déjà vu dans ta galerie, et rien d'autre. Le choix vient de toi, il se change et il se retire quand tu veux. **Il apparaît sur les listes que tu partages**, sous ton pseudo, et nulle part ailleurs pour l'instant. Ce qui n'en sort jamais : la règle qui l'a débloqué et où tu en es de ta progression.
 
 **Ta bannière.** La bande en haut de ton profil se choisit parmi celles que l'app propose : nous gardons le nom de celle que tu as choisie, et rien d'autre. Le choix vient de toi et il se change quand tu veux ; tout le monde en a une, celle de départ compris. Elle n'apparaît nulle part ailleurs pour l'instant, pas même sur les listes que tu partages. Elle deviendra visible avec ton profil le jour où les profils s'ouvriront ; cette page sera mise à jour à ce moment.
 
-**Le libellé de ta carte du top 5.** Ton profil montre la carte de ton top 5, avec en tête « Mon top 5 manhwa » ; tu peux écrire le tien à la place. Nous gardons le texte que tu écris, et rien d'autre : effacé, la carte reprend le libellé de départ, et nous ne gardons plus rien. Il n'apparaît que sur ton profil, que personne d'autre ne voit, et nulle part ailleurs pour l'instant, pas même sur les listes que tu partages. Il ne part vers aucun des services ci-dessous : l'analyse d'usage sait seulement que tu l'as changé, et si tu es revenu au libellé de départ. Le jour où tu pourras partager ta carte en image, il y figurera ; cette page sera mise à jour à ce moment.
+**Le libellé de ta carte du top 5.** Ton profil montre la carte de ton top 5, avec en tête « Mon top 5 manhwa » ; tu peux écrire le tien à la place. Nous gardons le texte que tu écris, et rien d'autre : effacé, la carte reprend le libellé de départ, et nous ne gardons plus rien. Il apparaît sur ton profil, que personne d'autre ne voit, et sur l'image de ta carte quand tu la partages ; nulle part ailleurs, pas même sur les listes que tu partages. Il ne part vers aucun des services ci-dessous : l'analyse d'usage sait seulement que tu l'as changé, et si tu es revenu au libellé de départ.
+
+**L'image de ta carte du top 5, quand tu la partages.** « Partager », sur ta carte, en fait une image que tu envoies où tu veux. Elle montre ton pseudo et sa pastille si tu en as un, le libellé de ta carte, les couvertures et les titres de tes séries classées, la note et le dernier chapitre lu de ton numéro 1, et ton total de chapitres lus. **Elle est fabriquée sur ton téléphone et ne passe par aucun de nos serveurs** : elle part seulement vers l'app que tu choisis dans la feuille de partage d'iOS, par ton geste. Une fois envoyée, elle appartient à l'endroit où tu l'as publiée : nous ne pouvons ni la reprendre ni savoir qui l'a vue. L'analyse d'usage reçoit seulement le nombre de séries sur ta carte et le type d'app choisie (Photos, Messages, Instagram…), jamais l'image ni ce qu'elle montre.
 
 **Si tu fais partie des bêta-testeurs.** Nous notons la date à laquelle tu l'es devenu. Elle débloque un titre « Bêta-testeur » que tu peux choisir de porter, comme les autres ; **cette date, elle, ne sort jamais de nos serveurs**, même quand tu portes le titre qu'elle débloque. Elle est posée à la main sur ton compte et tu ne peux pas te l'attribuer toi-même. Si tu supprimes ton compte, elle part avec lui : nous ne gardons rien qui permette de te la rendre, et il faudra nous le dire pour que nous la reposions.
 
@@ -56,11 +58,11 @@ Toonboxd n'affiche pas de publicité, ne pratique aucun suivi publicitaire, et n
 
 **Où trouver ton identifiant.** Dans l'app : Réglages, section Compte, « Ton identifiant ». C'est ce que nous te demanderons pour toute demande sur tes données.
 
-**Ce que Toonboxd ne stocke pas.** Ta position, tes contacts, tes photos, ton nom, tes moyens de paiement. L'app ne demande aucune de ces autorisations à ton iPhone.
+**Ce que Toonboxd ne stocke pas.** Ta position, tes contacts, tes photos, ton nom, tes moyens de paiement. L'app ne demande aucune de ces autorisations à ton iPhone. Si tu choisis « Enregistrer l'image » en partageant ta carte, c'est iOS qui te demande de laisser Toonboxd ajouter cette image à tes photos : un accès en ajout seul, qui ne permet pas de lire ta photothèque.
 
 ## Ce qui reste sur ton téléphone
 
-Sur l'appareil, l'app garde ta session, tes réponses aux premiers écrans (nombre de séries, sélection, chapitres), ta préférence de tri, un cache des couvertures, et une file d'attente des événements d'usage avant leur envoi. Tout part avec la désinstallation.
+Sur l'appareil, l'app garde ta session, tes réponses aux premiers écrans (nombre de séries, sélection, chapitres), ta préférence de tri, un cache des couvertures, une file d'attente des événements d'usage avant leur envoi, et l'image de ta carte le temps de la partager. Tout part avec la désinstallation.
 
 ## Les services que Toonboxd utilise
 
@@ -75,7 +77,7 @@ Six services reçoivent des données depuis ton téléphone, et un septième, Ex
 ### PostHog : l'analyse d'usage
 
 - Rôle : nous dire comment l'app est utilisée (quels écrans, quelles actions), pour l'améliorer.
-- Reçoit : tes actions dans l'app (ajout ou retrait d'une série, changement de statut ou de chapitre, écran ouvert, achat), avec l'identifiant de la série concernée ; **le texte de ta recherche quand elle ne donne aucun résultat** ; la version de l'app, la langue et le fuseau horaire de ton téléphone, la taille de l'écran, le type d'appareil ; le fait que tu es abonné ou non. Le tout est rangé sous ton identifiant de compte. Il ne reçoit jamais tes mémos, ton pseudo ni tes suggestions.
+- Reçoit : tes actions dans l'app (ajout ou retrait d'une série, changement de statut ou de chapitre, écran ouvert, achat, partage de ta carte avec le nombre de séries qu'elle montre et le type d'app choisie), avec l'identifiant de la série concernée ; **le texte de ta recherche quand elle ne donne aucun résultat** ; la version de l'app, la langue et le fuseau horaire de ton téléphone, la taille de l'écran, le type d'appareil ; le fait que tu es abonné ou non. Le tout est rangé sous ton identifiant de compte. Il ne reçoit jamais tes mémos, ton pseudo, tes suggestions ni l'image de ta carte.
 - Hébergement : Union européenne.
 - Adresse IP : comme tout serveur, PostHog reçoit l'adresse IP de ton téléphone à chaque envoi. Ce qu'il en garde dépend d'un réglage que nous n'avons pas encore vérifié.
 
@@ -169,6 +171,7 @@ Pour exercer un droit : un mail à contact@toonboxd.app avec ton identifiant (R�
 
 La date en tête change, et la liste ci-dessous dit ce qui a changé. L'historique complet de cette page est public dans le dépôt qui l'héberge : chaque version reste lisible.
 
+- 1er octobre 2026 : tu peux partager la carte de ton top 5 en image. Elle est fabriquée sur ton téléphone et part seulement vers l'app que tu choisis ; ton pseudo et le libellé de ta carte y figurent. L'app ne demande pas l'accès à tes photos : iOS te le demande si tu choisis d'y enregistrer l'image.
 - 30 septembre 2026 : tu peux écrire le libellé de la carte de ton top 5, et nous gardons ce texte. Il n'apparaît que sur ton profil, et ne sort pas de l'app pour l'instant.
 - 30 septembre 2026 : le site toonboxd.app propose de laisser ton email pour être prévenu du lancement. La section « Sur le site toonboxd.app » dit ce qui est gardé, où, et jusqu'à quand.
 - 30 septembre 2026 : quand une série que tu as suggérée est ajoutée, elle arrive dans ta bibliothèque, et l'app te prévient par une notification si tu les as acceptées. Expo reçoit alors le nom de cette série, comme pour une série en pause qui reprend.
