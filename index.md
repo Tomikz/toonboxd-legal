@@ -4,7 +4,7 @@ title: Politique de confidentialité de Toonboxd
 
 # Politique de confidentialité de Toonboxd
 
-Dernière mise à jour : 7 octobre 2026.
+Dernière mise à jour : 9 octobre 2026.
 
 Toonboxd est une application iPhone pour suivre ta lecture de manhwas, manhuas et webtoons. Cette page dit ce que l'app sait de toi, où ça va, et ce que tu peux en faire ; une section couvre aussi le site toonboxd.app.
 
@@ -151,7 +151,7 @@ Sentry n'a rien qui te désigne, donc rien à effacer par personne. RevenueCat r
 
 ## Sur le site toonboxd.app
 
-**Si tu laisses ton email pour être prévenu du lancement.** Le site propose de laisser ton adresse email pour recevoir un message le jour où Toonboxd arrive sur l'App Store. Nous gardons cette adresse, le téléphone que tu indiques (iPhone ou Android) et la date à laquelle tu les as laissés, et rien d'autre : pas de nom, pas de compte, aucun lien avec l'app. Ton téléphone nous sert à savoir combien de lecteurs attendent une version Android ; sur Android, tu reçois le même message de lancement que les autres. Elle est stockée chez Supabase, à Paris, dans une table que ni le site ni l'app ne peuvent relire. L'adresse sert à une seule chose, ce message, et elle est effacée avec ton téléphone une fois qu'il est parti. Tu peux les faire retirer avant, sans raison à donner, en écrivant à contact@toonboxd.app depuis cette adresse. C'est ton accord, donné en envoyant le formulaire, qui nous y autorise, et tu le retires de la même façon.
+**Si tu laisses ton email pour être prévenu du lancement.** Le site propose de laisser ton adresse email pour recevoir un message le jour où Toonboxd arrive sur ton téléphone : sur iPhone d'abord, sur Android ensuite. Nous gardons cette adresse, le téléphone que tu indiques (iPhone ou Android) et la date à laquelle tu les as laissés, et rien d'autre : pas de nom, pas de compte, aucun lien avec l'app. Ton téléphone dit quel message t'envoyer : celui du lancement sur iPhone, ou celui de la sortie Android. L'adresse est stockée chez Supabase, à Paris, dans une table que ni le site ni l'app ne peuvent relire. Elle sert à une seule chose, ce message, et elle est effacée avec ton téléphone une fois qu'il est parti, et au plus tard douze mois après ton inscription, même si ce message n'est pas encore parti. Tu peux les faire retirer avant, sans raison à donner, en écrivant à contact@toonboxd.app depuis cette adresse. C'est ton accord, donné en envoyant le formulaire, qui nous y autorise, et tu le retires de la même façon.
 
 **Ce que le site charge.** Les couvertures des séries viennent de notre catalogue, chez Supabase, et s'affichent depuis AniList, qui les héberge : ton navigateur contacte donc ces deux services, comme sur une liste partagée. Le site ne dépose aucun cookie et ne mesure rien de ses visiteurs.
 
@@ -176,6 +176,7 @@ Pour exercer un droit : un mail à contact@toonboxd.app avec ton identifiant (R�
 
 La date en tête change, et la liste ci-dessous dit ce qui a changé. L'historique complet de cette page est public dans le dépôt qui l'héberge : chaque version reste lisible.
 
+- 9 octobre 2026 : sur Android, ton email sert au message de la sortie Android, envoyé après celui du lancement sur iPhone, et non plus au même message que tout le monde. Une adresse est effacée une fois son message parti, et au plus tard douze mois après l'inscription.
 - 7 octobre 2026 : en laissant ton email sur le site, tu indiques aussi ton téléphone, iPhone ou Android. Nous le gardons avec l'adresse, pour savoir combien de lecteurs attendent une version Android, et il est effacé avec elle.
 - 5 octobre 2026 : notre base garde la date de fin de ton Pro et d'où il vient, un achat et sa formule, ou un accès offert ; RevenueCat nous le dit quand ton abonnement change. Cette page aurait dû dire la date de fin dès le 5 septembre, quand nos serveurs ont commencé à la garder.
 - 2 octobre 2026 : tu peux entourer ton avatar d'un cadre animé, et nous gardons le nom de celui que tu as choisi. Il ne se voit que sur ton profil et ne sort pas de l'app pour l'instant.
