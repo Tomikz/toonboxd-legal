@@ -24,7 +24,7 @@ Toonboxd n'affiche pas de publicité, ne pratique aucun suivi publicitaire, et n
 
 **Si tu lies ton compte à Apple.** Tu peux lier ce compte à ton identifiant Apple pour retrouver ta bibliothèque sur un autre iPhone. Apple nous transmet alors une adresse email : la tienne, ou une adresse relais si tu as choisi de la masquer. Nous ne demandons jamais ton nom. Cette adresse sert à te reconnaître et n'est affichée nulle part dans l'app.
 
-**Ta bibliothèque.** Les séries que tu suis, leur statut (en cours, en pause, prévue, terminée, abandonnée), le dernier chapitre lu, les dates d'ajout et de dernière modification, les séries que tu épingles, et la note que tu donnes à une série.
+**Ta bibliothèque.** Les séries que tu suis, leur statut (en cours, en pause, prévue, terminée, abandonnée), le dernier chapitre lu, les dates d'ajout et de dernière modification, les séries que tu épingles, et la note que tu donnes à une série. **Et, depuis le 9 octobre 2026, un historique de ta lecture, jour par jour** : de combien de chapitres tu as avancé chaque jour, en mettant à part ceux que tu indiques quand tu dis où tu en es et ceux que tu retires, et les séries que tu as terminées ce jour-là. Il se déduit de ce que tu fais déjà dans l'app, et nous le gardons pour pouvoir te montrer un jour des statistiques de ta lecture ; aucun écran ne l'affiche aujourd'hui. Il est privé : personne d'autre que toi ne peut le lire, et il ne quitte pas notre base.
 
 **Tes mémos de reprise.** Le texte que tu écris quand tu mets une série en pause. Il est privé : personne d'autre que toi ne le voit, et il ne quitte pas notre base, pas même dans une notification.
 
@@ -132,7 +132,7 @@ Si un jour nous faisons de la publicité pour Toonboxd et voulons mesurer d'où 
 
 **Où.** Dans l'app : Réglages, section Compte, « Supprimer mon compte ». Un écran dit ce qui part et ce qui reste, puis l'app demande « Supprimer ton compte ? ».
 
-**Ce qui part, tout de suite et pour de bon.** Tout ce que Toonboxd stocke sur toi : ton compte, ta bibliothèque, tes notes, tes mémos, ton pseudo, le libellé de ta carte, tes signalements, le jeton de notification de tes appareils, ta date de bêta-testeur si tu en avais une, et l'adresse Apple si tu avais lié ton compte.
+**Ce qui part, tout de suite et pour de bon.** Tout ce que Toonboxd stocke sur toi : ton compte, ta bibliothèque, ton historique de lecture, tes notes, tes mémos, ton pseudo, le libellé de ta carte, tes signalements, le jeton de notification de tes appareils, ta date de bêta-testeur si tu en avais une, et l'adresse Apple si tu avais lié ton compte.
 
 **Ce qui reste.**
 
@@ -176,6 +176,7 @@ Pour exercer un droit : un mail à contact@toonboxd.app avec ton identifiant (R�
 
 La date en tête change, et la liste ci-dessous dit ce qui a changé. L'historique complet de cette page est public dans le dépôt qui l'héberge : chaque version reste lisible.
 
+- 9 octobre 2026 : notre base garde un historique de ta lecture, jour par jour (les chapitres de chaque jour et les séries terminées), pour des statistiques de lecture que l'app pourra te montrer ; il est privé, rien ne l'affiche encore, et il part avec ton compte.
 - 9 octobre 2026 : sur Android, ton email sert au message de la sortie Android, envoyé après celui du lancement sur iPhone, et non plus au même message que tout le monde. Une adresse est effacée une fois son message parti, et au plus tard douze mois après l'inscription.
 - 7 octobre 2026 : en laissant ton email sur le site, tu indiques aussi ton téléphone, iPhone ou Android. Nous le gardons avec l'adresse, pour savoir combien de lecteurs attendent une version Android, et il est effacé avec elle.
 - 5 octobre 2026 : notre base garde la date de fin de ton Pro et d'où il vient, un achat et sa formule, ou un accès offert ; RevenueCat nous le dit quand ton abonnement change. Cette page aurait dû dire la date de fin dès le 5 septembre, quand nos serveurs ont commencé à la garder.
