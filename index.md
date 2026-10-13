@@ -120,7 +120,7 @@ Connexion avec Apple et l'achat passent par Apple. Ce qu'Apple fait de ces opér
 ### Deux choses sans service
 
 - Les couvertures des séries sont chargées depuis AniList (s4.anilist.co). Comme pour toute image sur le web, ce serveur reçoit l'adresse IP de ton téléphone et l'adresse de l'image.
-- « Lire sur … » et « Chercher le chapitre N » ouvrent un navigateur dans l'app, vers la plateforme officielle ou vers une recherche Google. Ce qui se passe sur ces pages relève de ces sites, pas de Toonboxd.
+- « Lire sur … » ouvre un navigateur dans l'app, vers la plateforme officielle ; « Chercher le chapitre N » ouvre Safari, sur une recherche Google. Ce qui se passe sur ces pages relève de ces sites, pas de Toonboxd.
 
 ## Le suivi publicitaire
 
@@ -176,6 +176,7 @@ Pour exercer un droit : un mail à contact@toonboxd.app avec ton identifiant (R�
 
 La date en tête change, et la liste ci-dessous dit ce qui a changé. L'historique complet de cette page est public dans le dépôt qui l'héberge : chaque version reste lisible.
 
+- 13 octobre 2026 : « Chercher le chapitre N » ouvre désormais Safari, et non plus un navigateur dans l'app. Rien d'autre ne change : la recherche part vers Google comme avant.
 - 13 octobre 2026 : en laissant ton email sur le site, tu reçois aussi un message pour la bêta, avant celui du lancement, et rien d'autre. Si tu t'étais inscrit avant, tu reçois aussi ce message de la bêta, une seule fois, en exception à la promesse d'un message unique ; une réponse « STOP » efface ton adresse.
 - 9 octobre 2026 : notre base garde un historique de ta lecture, jour par jour (les chapitres de chaque jour et les séries terminées), pour des statistiques de lecture que l'app pourra te montrer ; il est privé, rien ne l'affiche encore, et il part avec ton compte.
 - 9 octobre 2026 : sur Android, ton email sert au message de la sortie Android, envoyé après celui du lancement sur iPhone, et non plus au même message que tout le monde. Une adresse est effacée une fois son message parti, et au plus tard douze mois après l'inscription.
