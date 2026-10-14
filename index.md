@@ -4,7 +4,7 @@ title: Politique de confidentialité de Toonboxd
 
 # Politique de confidentialité de Toonboxd
 
-Dernière mise à jour : 13 octobre 2026.
+Dernière mise à jour : 14 octobre 2026.
 
 Toonboxd est une application iPhone pour suivre ta lecture de manhwas, manhuas et webtoons. Cette page dit ce que l'app sait de toi, où ça va, et ce que tu peux en faire ; une section couvre aussi le site toonboxd.app.
 
@@ -50,6 +50,8 @@ Toonboxd n'affiche pas de publicité, ne pratique aucun suivi publicitaire, et n
 
 **Comment tu défais un partage.** Sur la liste, « Dépublier ». La page cesse aussitôt d'être consultable. Le lien, lui, reste le tien : si tu republies la même liste plus tard, il remarche. **Si tu supprimes la liste, le lien meurt pour de bon** et ne peut pas être rendu, même en recréant la même liste. Nous ne pouvons pas savoir qui a déjà ouvert un lien ni le reprendre à qui l'a reçu : c'est vrai de tout lien partagé, et c'est la seule chose à savoir avant de partager.
 
+**Si une liste partagée est signalée.** Sa page porte un lien « Signaler cette liste », qui ouvre un courriel vers contact@toonboxd.app. Nous lisons chaque signalement, et nous retirons une liste dont le texte enfreint la loi, insulte, harcèle ou expose quelqu'un : sa page cesse d'être consultable, mais rien n'est effacé. La liste reste à toi dans l'app, qui te dit qu'elle a été retirée et où écrire pour la contester. **Si c'est toi qui signales**, nous recevons ton adresse et ton message, comme pour tout courriel : nous ne les recopions nulle part, et nous les supprimons une fois le signalement traité.
+
 **Tes suggestions de titres.** Le titre que tu proposes, et le lien ou la note que tu ajoutes éventuellement. Si nous ajoutons la série, elle arrive dans ta bibliothèque, en « Prévu », et nous te prévenons par une notification si tu les as acceptées.
 
 **Tes signalements.** Quand tu signales qu'une série en pause a repris : la série et la date, rien d'autre.
@@ -66,7 +68,7 @@ Toonboxd n'affiche pas de publicité, ne pratique aucun suivi publicitaire, et n
 
 ## Ce qui reste sur ton téléphone
 
-Sur l'appareil, l'app garde ta session, tes réponses aux premiers écrans (nombre de séries, sélection, chapitres), ta préférence de tri, ton choix d'afficher ou non ton total sur ta carte, un cache des couvertures, une file d'attente des événements d'usage avant leur envoi, et l'image de ta carte le temps de la partager. Tout part avec la désinstallation.
+Sur l'appareil, l'app garde ta session, tes réponses aux premiers écrans (nombre de séries, sélection, chapitres), ta préférence de tri, ton choix d'afficher ou non ton total sur ta carte, ton choix sur les statistiques d'usage, un cache des couvertures, une file d'attente des événements d'usage avant leur envoi, et l'image de ta carte le temps de la partager. Tout part avec la désinstallation.
 
 ## Les services que Toonboxd utilise
 
@@ -79,6 +81,8 @@ Six services reçoivent des données depuis ton téléphone, et un septième, Ex
 - Hébergement : Paris, France.
 
 ### PostHog : l'analyse d'usage
+
+**Tu peux la couper.** Dans l'app, Réglages, section Confidentialité, la case « Statistiques d'usage ». Décochée, l'app n'envoie plus rien à PostHog ni à Firebase Analytics, ce qui attendait l'envoi sur ton téléphone est jeté, et RevenueCat perd l'identifiant d'installation Firebase, donc tes achats n'y arrivent plus non plus. Ton téléphone se souvient de ce choix d'un lancement à l'autre. Ce qui était déjà parti s'efface sur demande (plus bas). Les rapports de plantage de Sentry, eux, continuent : ce ne sont pas des statistiques.
 
 - Rôle : nous dire comment l'app est utilisée (quels écrans, quelles actions), pour l'améliorer.
 - Reçoit : tes actions dans l'app (ajout ou retrait d'une série, changement de statut ou de chapitre, écran ouvert, achat, partage de ta carte avec le nombre de séries qu'elle montre, si ton total y figurait, et le type d'app choisie), avec l'identifiant de la série concernée ; **le texte de ta recherche quand elle ne donne aucun résultat** ; la version de l'app, la langue et le fuseau horaire de ton téléphone, la taille de l'écran, le type d'appareil ; le fait que tu es abonné ou non. Le tout est rangé sous ton identifiant de compte. Il ne reçoit jamais tes mémos, ton pseudo, tes suggestions ni l'image de ta carte.
@@ -138,7 +142,7 @@ Si un jour nous faisons de la publicité pour Toonboxd et voulons mesurer d'où 
 
 - Tes suggestions de titres, sans plus rien qui les relie à toi : elles servent le catalogue.
 - Ton abonnement, s'il existe. Il se gère dans les réglages Apple, et la suppression ne le résilie pas.
-- La liaison à ton identifiant Apple, côté Apple. Tu la retires toi-même dans les réglages iOS, sous ton nom, puis Connexion avec Apple.
+- La liaison à ton identifiant Apple, côté Apple. Tu la retires toi-même : Réglages, ton nom, Se connecter avec Apple, puis Toonboxd. L'app te le rappelle au moment de la suppression, avec la page d'aide d'Apple.
 - Chez Expo, ce qu'il a reçu pour acheminer tes notifications. Nous ne savons pas encore ce qu'il en garde.
 
 **Ce que la suppression ne fait pas.** Elle n'efface pas ce qui a déjà été envoyé aux services d'analyse. PostHog et Firebase gardent les événements reçus, rangés sous ton identifiant. Pour les effacer :
@@ -163,12 +167,12 @@ Le RGPD te donne des droits sur tes données. Voici ce que chacun veut dire ici.
 - Rectification : ton pseudo, le libellé de ta carte, ta bibliothèque, tes notes et tes mémos se modifient dans l'app.
 - Effacement : le bouton « Supprimer mon compte », puis la demande décrite ci-dessus pour l'analyse d'usage.
 - Portabilité : l'app n'a pas de fonction d'export. Sur demande, nous t'envoyons une copie de tes données dans un format lisible.
-- Opposition et limitation : pour l'analyse d'usage, sur demande. Il n'existe pas de réglage dans l'app pour la désactiver.
+- Opposition et limitation : pour l'analyse d'usage, dans l'app, à tout moment : Réglages, section Confidentialité, « Statistiques d'usage ». Décochée, plus rien ne part vers PostHog ni Firebase Analytics depuis ton téléphone.
 - Réclamation : auprès de la CNIL (cnil.fr), si tu estimes que tes droits ne sont pas respectés.
 
 Pour exercer un droit : un mail à contact@toonboxd.app avec ton identifiant (Réglages, section Compte, « Ton identifiant »). Sans lui, nous ne pouvons pas te retrouver : un compte anonyme n'a rien d'autre. Nous répondons dans le mois.
 
-**Sur quelle base.** Le compte, la bibliothèque et l'abonnement sont nécessaires au service que tu utilises. L'analyse d'usage et les rapports de plantage relèvent de notre intérêt légitime à comprendre et à réparer l'app. Les notifications reposent sur ton accord, donné à iOS et retiré dans les réglages iOS.
+**Sur quelle base.** Le compte, la bibliothèque et l'abonnement sont nécessaires au service que tu utilises. L'analyse d'usage et les rapports de plantage relèvent de notre intérêt légitime à comprendre et à réparer l'app ; tu peux t'opposer à l'analyse d'usage à tout moment, par la case des Réglages. Les notifications reposent sur ton accord, donné à iOS et retiré dans les réglages iOS. Un signalement de liste se traite parce que la loi nous oblige à agir sur un contenu illicite qu'on nous signale.
 
 **Hors de l'Union européenne.** Google, RevenueCat et Expo peuvent héberger leurs données hors de l'UE ; nous n'avons pas encore vérifié où. Cette page sera précisée quand ce sera fait.
 
@@ -176,6 +180,9 @@ Pour exercer un droit : un mail à contact@toonboxd.app avec ton identifiant (R�
 
 La date en tête change, et la liste ci-dessous dit ce qui a changé. L'historique complet de cette page est public dans le dépôt qui l'héberge : chaque version reste lisible.
 
+- 14 octobre 2026 : le chemin pour retirer Toonboxd de ton identifiant Apple est corrigé (Réglages, ton nom, Se connecter avec Apple), et l'app te le rappelle une fois ton compte supprimé.
+- 14 octobre 2026 : tu peux couper l'analyse d'usage dans les Réglages (« Statistiques d'usage »). Décochée, plus rien ne part vers PostHog ni Firebase Analytics, et ton téléphone se souvient de ce choix. Cette page disait jusqu'ici qu'aucun réglage n'existait.
+- 14 octobre 2026 : une liste partagée peut être signalée depuis sa page, et nous pouvons la retirer de la consultation. La liste reste à toi, et l'app te le dit. Si tu signales une liste, ton courriel est supprimé une fois le signalement traité.
 - 13 octobre 2026 : « Chercher le chapitre N » ouvre désormais Safari, et non plus un navigateur dans l'app. Rien d'autre ne change : la recherche part vers Google comme avant.
 - 13 octobre 2026 : en laissant ton email sur le site, tu reçois aussi un message pour la bêta, avant celui du lancement, et rien d'autre. Si tu t'étais inscrit avant, tu reçois aussi ce message de la bêta, une seule fois, en exception à la promesse d'un message unique ; une réponse « STOP » efface ton adresse.
 - 9 octobre 2026 : notre base garde un historique de ta lecture, jour par jour (les chapitres de chaque jour et les séries terminées), pour des statistiques de lecture que l'app pourra te montrer ; il est privé, rien ne l'affiche encore, et il part avec ton compte.
