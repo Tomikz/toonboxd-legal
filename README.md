@@ -2,9 +2,11 @@
 
 `index.md` est la politique. Elle se rédige depuis `docs/COLLECTE.md` et rien d'autre ; une phrase sans ligne d'inventaire derrière elle se retire ou passe en « non vérifié ». Ce dossier se copie tel quel dans un dépôt public séparé, et l'URL obtenue va dans la fiche App Store Connect (champ « URL de la politique de confidentialité ») et dans l'app, en constante : `constants/Legal.ts` (`PRIVACY_POLICY_URL`), lue par l'écran d'achat (12/12) et par la section « À propos » des Réglages depuis p6-9 (30 août 2026). Publiée à `https://tomikz.github.io/toonboxd-legal/`. Le jour où l'adresse change, la constante et la fiche changent le même jour.
 
+**La version anglaise, `en/index.md`, depuis le 16 octobre 2026** (commit 3 du plan de l'anglais, `docs/PLAN-ANGLAIS.md`). Elle se publie à `https://tomikz.github.io/toonboxd-legal/en/`, une adresse que `constants/Legal.ts` donne aux appareils en anglais et que les quatre fiches anglaises d'App Store Connect portent, le champ « URL de la politique de confidentialité » étant propre à chaque localisation. **Elle traduit la française, qui fait foi**, et dit les mêmes faits, rien de plus et rien de moins, avec deux différences permises : elle cite les libellés de l'app en anglais (ceux de `locales/en.json`), et son historique des changements commence à sa première version, celui d'avant restant sur la page française. **Une phrase qui change d'un côté change de l'autre dans le même commit**, et les deux dates en tête avec elle. **Aucun build de l'app qui porte l'adresse anglaise ne part avant sa publication** : le commit 2 du plan l'a posée dans `constants/Legal.ts` ; avant la publication, un lecteur anglophone ouvrirait une page absente.
+
 ## Publication
 
-1. Un dépôt public, `index.md` et ce fichier à sa racine.
+1. Un dépôt public, `index.md` et ce fichier à sa racine, et `en/index.md` dans un dossier `en/` (Jekyll le sert à `/en/`).
 2. Settings, Pages, source « Deploy from a branch », branche `main`, dossier `/ (root)`.
 3. L'URL est `https://<compte>.github.io/<dépôt>/`. Pas de domaine personnalisé pour l'instant : `toonboxd.app` est réservé au site de la Phase 10 (`constants/Handle.ts` réserve déjà `confidentialite` et `cgu`), l'URL de la fiche se change à tout moment, et celle de l'app sera une constante.
 4. Ce README est publié aussi (Jekyll rend tout `.md`), à `/README.html`. Sans conséquence.
@@ -21,6 +23,14 @@ grep -c 'Politique de confidentialit' /tmp/legal.html   # TEMOIN, doit etre non 
 grep -c '<phrase ajoutee par le dernier commit>' /tmp/legal.html
 ```
 
+**La page anglaise se contrôle de la même façon, sous son propre témoin** (16 octobre 2026) :
+
+```bash
+curl -s -o /tmp/legal-en.html https://tomikz.github.io/toonboxd-legal/en/
+grep -c 'Toonboxd Privacy Policy' /tmp/legal-en.html                 # TEMOIN, doit etre non nul
+grep -c '<phrase ajoutee par le dernier commit>' /tmp/legal-en.html
+```
+
 **Le témoin passe en premier et il n'est pas de la cérémonie** : sans lui, un `grep` qui rend zéro ne distingue pas « la copie est en retard » de « l'URL rend une 404 », et le 3 septembre ce piège exact a fait lire la page 404 de GitHub comme si c'était la nôtre. **Relevé du 5 septembre 2026** : les trois phrases de titres 4 sont présentes, sous un témoin à 5 occurrences. La copie est à jour. **Rapporté le 30 septembre 2026** : la version de Notif 2 (la section Expo) a été republiée et vérifiée en ligne ; la date, les phrases et le témoin non rapportés. La mise à jour de Notif 5 (la notification d'une suggestion acceptée, le même jour) est à republier. **Trois mises à jour sont à republier ensemble au 1er octobre 2026** : celle de Notif 5, celle du libellé de la carte (30 septembre) et celle du partage de la carte en image (1er octobre, Top 5 partage 2). Une republication les porte, et le contrôle cherche une phrase de chacune, sans apostrophe pour que la typographie de kramdown ne la change pas : `quand une série que tu as suggérée est ajoutée`, `tu peux écrire le libellé de la carte de ton top 5`, `tu peux partager la carte de ton top 5 en image`, chacune à 1 au moins sous le témoin. **La mise à jour de Pro 3 (5 octobre 2026) est à republier** : la ligne « Nous renvoie » de la section RevenueCat et la ligne datée, qui disent la même chose ; le contrôle cherche `notre base garde la date de fin de ton Pro` (sans apostrophe), attendu à DEUX occurrences par `grep -o … | wc -l` sous le témoin, une par endroit, et la date en tête au 5 octobre 2026. **Republiée le 13 octobre 2026 à 07:09 UTC, la version de l'historique de lecture (`fb1eb86`), et relevée à 07:10** : la copie publiée était exactement la source de `53e8c6b`, donc rien à reporter avant de la remplacer (comparée par `diff --strip-trailing-cr` à chaque version de la source, la règle du sens unique) ; sous le témoin à 5, `un historique de ta lecture, jour par jour` à 2 (le paragraphe de la bibliothèque, l'entrée datée), `ta bibliothèque, ton historique de lecture, tes notes` à 1, `notre base garde un historique de ta lecture` à 1, la date en tête au 9 octobre 2026 ; et sur la page, sous leurs quatre témoins, aucun caractère banni ni aucune entité. La copie s'est faite par un clone du dépôt public, `index.md` et ce README remplacés par la source, un commit, un `push` ; Pages a servi la version neuve en moins d'une minute. **Republiée de nouveau le 13 octobre 2026 à 07:24 UTC, la promesse de l'inscription au lancement (`5da1f73`)** : la copie servie était la source de `fb1eb86` pour `index.md` et de `24f82d5` pour ce README, donc rien à reporter ; sous le témoin à 5, `un message pour la bêta` à 2 (le paragraphe du site, l'entrée datée), la date en tête au 13 octobre 2026, aucun caractère banni. **Republiée une troisième fois le même jour, à 07:34 UTC (`18d6c38`)**, pour la décision de l'utilisateur : les inscrits d'avant la promesse reçoivent aussi le message de la bêta, en exception déclarée, avec une désinscription par « STOP » ; la copie servie était la source de `9779a51`, donc rien à reporter ; sous le témoin à 5, `STOP` à 2 (le paragraphe du site, l'entrée datée), la phrase qui écartait ces inscrits absente, aucun caractère banni.
 
 ## Ce qui se vérifie avant de publier
@@ -30,6 +40,8 @@ grep -c '<phrase ajoutee par le dernier commit>' /tmp/legal.html
 - Le SQL de la suppression de compte est appliqué : sans lui, le chemin que la page décrit rend « La suppression a échoué ».
 - La rangée « Ton identifiant » des Réglages est livrée (`48ed991`) : la page la cite trois fois, et `grep -o -F 'Ton identifiant' legal/index.md | wc -l` rend 3. Ce compte a rendu 1 la première fois qu'il a été joué, sur une page qui disait « dans les Réglages » sans nommer la rangée : un renvoi qui ne nomme pas ce qu'il désigne ne se contrôle pas.
 - Chaque chaîne de l'app citée dans la page se retrouve par `grep` dans `locales/fr.json`, jamais dans un document qui la répète ; celles d'une notification (Notif 2, 29 septembre 2026, la section Expo) dans `supabase/functions/envoyer-notifications/chaines.ts`, leur seul domicile.
+- **La page anglaise** : ses libellés de l'app se retrouvent dans `locales/en.json` ; les messages des notifications y sont cités **en français, tels qu'ils partent aujourd'hui**, donc dans `chaines.ts`, avec ce qu'ils disent en anglais entre parenthèses, sans guillemets (le commit 5 du plan les fera partir dans la langue de l'appareil, et les deux pages changeront alors). Restent légitimement hors des deux fichiers : les formes interpolées (« Read on … », « Search for chapter N »), le libellé d'iOS « Save Image », le signal « Do Not Track », la réponse « STOP », et « Signaler cette liste », le lien de la page publique d'une liste, cité tel qu'il s'affiche, en français, avec son sens en anglais entre parenthèses : il se retrouve dans `web/l/index.html`, son seul domicile, jusqu'au commit 7 du plan, qui rend cette page bilingue et fera changer la page anglaise. `grep -o -F 'Your User ID' legal/en/index.md | wc -l` rend 3, comme « Ton identifiant » dans la page française.
+- **Les deux pages disent la même chose** : leurs sections se répondent une à une (le même nombre de titres `##`, `grep -c '^## '` sur les deux), et la section des pays hors de France existe des deux côtés, puisqu'un lecteur du Québec dont l'iPhone est en français lit la page française.
 
 ## Deux instruments, parce que le rendu peut introduire ce que la source ne contient pas
 
@@ -42,8 +54,8 @@ Le fichier de motifs `/tmp/bannis.txt` se construit par la forme des *Critical R
 ```
 od -An -tx1 /tmp/bannis.txt                                          # attendu : e2 80 94 0a c2 b7 0a
 grep -c -F -f /tmp/bannis.txt node_modules/react-native/README.md   # témoin tiers, AVANT : 5
-grep -rn -F -f /tmp/bannis.txt legal/                               # attendu : rien
-grep -n -- '--' legal/index.md                                      # attendu : exactement les lignes 1 et 3 (front matter)
+git ls-files -z --cached --others --exclude-standard legal/ | xargs -0 grep -n -I -F -f /tmp/bannis.txt   # attendu : rien
+grep -n -- '--' legal/index.md legal/en/index.md                    # attendu : exactement les lignes 1 et 3 de chacune (front matter)
 ```
 
 **Sur la page publiée**, après chaque déploiement (Pages met jusqu'à une minute). Le contrôle cherche le caractère et ses formes d'entité, parce que kramdown peut émettre l'un ou l'autre selon `entity_output` :

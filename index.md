@@ -4,9 +4,11 @@ title: Politique de confidentialité de Toonboxd
 
 # Politique de confidentialité de Toonboxd
 
-Dernière mise à jour : 14 octobre 2026.
+Dernière mise à jour : 16 octobre 2026.
 
-Toonboxd est une application iPhone pour suivre ta lecture de manhwas, manhuas et webtoons. Cette page dit ce que l'app sait de toi, où ça va, et ce que tu peux en faire ; une section couvre aussi le site toonboxd.app.
+*English version: [Toonboxd Privacy Policy](https://tomikz.github.io/toonboxd-legal/en/). Cette page existe aussi en anglais ; en cas d'écart entre les deux, la version française fait foi.*
+
+Toonboxd est une application iPhone pour suivre ta lecture de manhwas, manhuas et webtoons. Cette page dit ce que l'app sait de toi, où ça va, et ce que tu peux en faire ; une section couvre aussi le site toonboxd.app, et une autre ce que la loi de ton pays peut ajouter.
 
 ## Qui en répond
 
@@ -168,7 +170,7 @@ Le RGPD te donne des droits sur tes données. Voici ce que chacun veut dire ici.
 - Effacement : le bouton « Supprimer mon compte », puis la demande décrite ci-dessus pour l'analyse d'usage.
 - Portabilité : l'app n'a pas de fonction d'export. Sur demande, nous t'envoyons une copie de tes données dans un format lisible.
 - Opposition et limitation : pour l'analyse d'usage, dans l'app, à tout moment : Réglages, section Confidentialité, « Statistiques d'usage ». Décochée, plus rien ne part vers PostHog ni Firebase Analytics depuis ton téléphone.
-- Réclamation : auprès de la CNIL (cnil.fr), si tu estimes que tes droits ne sont pas respectés.
+- Réclamation : auprès de la CNIL (cnil.fr), ou de l'autorité de protection des données de ton pays (plus bas), si tu estimes que tes droits ne sont pas respectés.
 
 Pour exercer un droit : un mail à contact@toonboxd.app avec ton identifiant (Réglages, section Compte, « Ton identifiant »). Sans lui, nous ne pouvons pas te retrouver : un compte anonyme n'a rien d'autre. Nous répondons dans le mois.
 
@@ -176,10 +178,22 @@ Pour exercer un droit : un mail à contact@toonboxd.app avec ton identifiant (R�
 
 **Hors de l'Union européenne.** Google, RevenueCat et Expo peuvent héberger leurs données hors de l'UE ; nous n'avons pas encore vérifié où. Cette page sera précisée quand ce sera fait.
 
+## Si tu vis hors de France
+
+Toonboxd s'adresse à des lecteurs en France et dans des pays anglophones : les États-Unis, le Royaume-Uni, le Canada, l'Australie, l'Irlande et la Nouvelle-Zélande. Tout ce qui précède vaut où que tu vives, et si tu vis hors de France, tes données sont conservées et traitées hors de ton pays : en France et dans l'Union européenne, et peut-être ailleurs pour Google, RevenueCat et Expo (« Hors de l'Union européenne », plus haut). Voici ce que la loi de ton pays peut y ajouter.
+
+- **L'Irlande et le reste de l'Union européenne.** Le RGPD s'applique comme décrit plus haut. Tu peux aussi saisir l'autorité de ton pays, en Irlande la Data Protection Commission (dataprotection.ie).
+- **Le Royaume-Uni.** Le UK GDPR et le Data Protection Act 2018 te donnent les mêmes droits, qui s'exercent de la même façon. Tu peux saisir l'Information Commissioner's Office (ico.org.uk). Notre base est hébergée à Paris, et PostHog et Sentry dans l'Union européenne, que le droit britannique considère comme offrant une protection adéquate ; pour Google, RevenueCat et Expo, voir « Hors de l'Union européenne », plus haut.
+- **Le Canada.** Tu peux consulter tes données et les faire corriger comme décrit plus haut. La personne responsable de la protection de tes renseignements personnels, y compris au sens de la loi québécoise, est Paul Maxime Nadin (contact@toonboxd.app). Tu peux saisir le Commissariat à la protection de la vie privée du Canada (priv.gc.ca) et, au Québec, la Commission d'accès à l'information (cai.gouv.qc.ca).
+- **L'Australie et la Nouvelle-Zélande.** Tu peux consulter tes données et les faire corriger comme décrit plus haut. Si notre réponse ne te satisfait pas, tu peux t'adresser à l'Office of the Australian Information Commissioner (oaic.gov.au) ou, en Nouvelle-Zélande, à l'Office of the Privacy Commissioner (privacy.org.nz).
+- **Les États-Unis, Californie comprise.** Nous ne vendons pas tes données personnelles et ne les partageons pas pour de la publicité fondée sur ton activité dans les apps et les sites d'autres entreprises, au sens où le droit californien définit la vente et le partage, et nous ne les communiquons à aucun tiers pour sa propre prospection. Une limite, la même que plus haut : nous n'avons pas vérifié tous les réglages de Firebase Analytics, le service de Google qui reçoit nos statistiques d'usage. Les catégories de données que nous collectons, leur origine, leur usage et ceux qui les reçoivent sont décrits plus haut, comme les moyens de les consulter, de les corriger et de les supprimer. **« Do Not Track ».** Toonboxd ne te suit pas sur les apps ou les sites d'autres entreprises, et n'a activé aucune fonction qui permettrait à un tiers de le faire : nous ne réagissons donc pas différemment au signal « Do Not Track » d'un navigateur, et le site ne mesure rien de toute façon.
+- **Les enfants.** Toonboxd ne s'adresse pas aux enfants de moins de 13 ans, et nous ne collectons pas sciemment de données sur eux. Si tu penses qu'un enfant de moins de 13 ans a utilisé l'app, écris-nous avec l'identifiant du compte, affiché dans les Réglages de l'app : nous supprimerons le compte, et demanderons à PostHog et à Firebase d'effacer ses données d'usage.
+
 ## Si cette page change
 
 La date en tête change, et la liste ci-dessous dit ce qui a changé. L'historique complet de cette page est public dans le dépôt qui l'héberge : chaque version reste lisible.
 
+- 16 octobre 2026 : cette page existe en anglais (English version), et une section dit ce que la loi de ton pays peut ajouter, au Royaume-Uni, au Canada, en Australie, en Nouvelle-Zélande et aux États-Unis, et pour les enfants. En cas d'écart entre les deux versions, la française fait foi.
 - 14 octobre 2026 : le chemin pour retirer Toonboxd de ton identifiant Apple est corrigé (Réglages, ton nom, Se connecter avec Apple), et l'app te le rappelle une fois ton compte supprimé.
 - 14 octobre 2026 : tu peux couper l'analyse d'usage dans les Réglages (« Statistiques d'usage »). Décochée, plus rien ne part vers PostHog ni Firebase Analytics, et ton téléphone se souvient de ce choix. Cette page disait jusqu'ici qu'aucun réglage n'existait.
 - 14 octobre 2026 : une liste partagée peut être signalée depuis sa page, et nous pouvons la retirer de la consultation. La liste reste à toi, et l'app te le dit. Si tu signales une liste, ton courriel est supprimé une fois le signalement traité.
