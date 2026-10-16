@@ -1,73 +1,10 @@
-# Publier la politique de confidentialité
+# L'ancienne adresse de la politique de confidentialité de Toonboxd
 
-`index.md` est la politique. Elle se rédige depuis `docs/COLLECTE.md` et rien d'autre ; une phrase sans ligne d'inventaire derrière elle se retire ou passe en « non vérifié ». Ce dossier se copie tel quel dans un dépôt public séparé, et l'URL obtenue va dans la fiche App Store Connect (champ « URL de la politique de confidentialité ») et dans l'app, en constante : `constants/Legal.ts` (`PRIVACY_POLICY_URL`), lue par l'écran d'achat (12/12) et par la section « À propos » des Réglages depuis p6-9 (30 août 2026). Publiée à `https://tomikz.github.io/toonboxd-legal/`. Le jour où l'adresse change, la constante et la fiche changent le même jour.
+Depuis le 16 octobre 2026, la politique de confidentialité de Toonboxd est publiée sur son site :
 
-**La version anglaise, `en/index.md`, depuis le 16 octobre 2026** (commit 3 du plan de l'anglais, `docs/PLAN-ANGLAIS.md`). Elle se publie à `https://tomikz.github.io/toonboxd-legal/en/`, une adresse que `constants/Legal.ts` donne aux appareils en anglais et que les quatre fiches anglaises d'App Store Connect portent, le champ « URL de la politique de confidentialité » étant propre à chaque localisation. **Elle traduit la française, qui fait foi**, et dit les mêmes faits, rien de plus et rien de moins, avec deux différences permises : elle cite les libellés de l'app en anglais (ceux de `locales/en.json`), et son historique des changements commence à sa première version, celui d'avant restant sur la page française. **Une phrase qui change d'un côté change de l'autre dans le même commit**, et les deux dates en tête avec elle. **Aucun build de l'app qui porte l'adresse anglaise ne part avant sa publication** : le commit 2 du plan l'a posée dans `constants/Legal.ts` ; avant la publication, un lecteur anglophone ouvrirait une page absente.
+- en français : https://toonboxd.app/confidentialite/
+- en anglais : https://toonboxd.app/privacy/
 
-## Publication
+Ce dépôt la servait jusque-là. Il reste en ligne parce que des versions de l'app et la fiche App Store y renvoient : ses deux pages conduisent désormais aux nouvelles adresses. **Chaque version publiée ici jusqu'au 16 octobre 2026 reste lisible dans l'historique de ce dépôt** ; les suivantes sont dans celui du site, https://github.com/Tomikz/toonboxd-web.
 
-1. Un dépôt public, `index.md` et ce fichier à sa racine, et `en/index.md` dans un dossier `en/` (Jekyll le sert à `/en/`).
-2. Settings, Pages, source « Deploy from a branch », branche `main`, dossier `/ (root)`.
-3. L'URL est `https://<compte>.github.io/<dépôt>/`. Pas de domaine personnalisé pour l'instant : `toonboxd.app` est réservé au site de la Phase 10 (`constants/Handle.ts` réserve déjà `confidentialite` et `cgu`), l'URL de la fiche se change à tout moment, et celle de l'app sera une constante.
-4. Ce README est publié aussi (Jekyll rend tout `.md`), à `/README.html`. Sans conséquence.
-
-**Le sens est toujours source vers copie, et il n'y en a qu'un.** Une correction faite directement dans le dépôt public se transcrit ici **avant** tout autre changement de la page, sinon la source ment et la recopie suivante écrase la correction. Le cas est arrivé le 3 septembre 2026 (`DECISIONS.md` §9) : les deux fichiers étaient justes séparément, et rien dans aucun des deux dépôts ne disait lequel faisait foi. Une divergence ne se voit qu'en comparant les deux, donc la comparaison est le contrôle : avant de publier, relire la page en ligne à côté d'`index.md` sur les passages que la journée a touchés.
-
-**Cette règle ne couvre qu'un sens, et le second est arrivé le 5 septembre 2026 sur l'autre copie du produit.** La page de `web/l/` servie était **en retard d'un commit** sur sa source, un commit l'ayant modifiée après la publication : la règle ci-dessus vise la copie **plus récente**, celle-là était **plus ancienne**. La cause vaut ici mot pour mot, tout commit qui touche `legal/` après une copie la périmant sans que rien ne le signale. **La parade est une comparaison et non une discipline** : une discipline demande de la vigilance et échoue en silence quand elle manque, une comparaison ne raisonne pas sur qui a écrit en dernier, donc elle est indifférente au sens du défaut.
-
-**L'instrument n'est pas celui de `web/`, et les confondre donnerait un faux négatif.** Là-bas la page est copiée **telle quelle**, donc l'artefact et la source sont le même fichier et un `diff` d'octets tranche. Ici `index.md` passe par kramdown : **l'artefact est du HTML, la source du Markdown**, et un `diff` d'octets rendrait « différent » sur deux fichiers parfaitement synchronisés. Le contrôle est donc un `grep` de phrases connues sur la page servie, sous témoin positif, la même forme que celle des caractères bannis plus bas.
-
-```bash
-curl -s -o /tmp/legal.html https://tomikz.github.io/toonboxd-legal/
-grep -c 'Politique de confidentialit' /tmp/legal.html   # TEMOIN, doit etre non nul
-grep -c '<phrase ajoutee par le dernier commit>' /tmp/legal.html
-```
-
-**La page anglaise se contrôle de la même façon, sous son propre témoin** (16 octobre 2026) :
-
-```bash
-curl -s -o /tmp/legal-en.html https://tomikz.github.io/toonboxd-legal/en/
-grep -c 'Toonboxd Privacy Policy' /tmp/legal-en.html                 # TEMOIN, doit etre non nul
-grep -c '<phrase ajoutee par le dernier commit>' /tmp/legal-en.html
-```
-
-**Le témoin passe en premier et il n'est pas de la cérémonie** : sans lui, un `grep` qui rend zéro ne distingue pas « la copie est en retard » de « l'URL rend une 404 », et le 3 septembre ce piège exact a fait lire la page 404 de GitHub comme si c'était la nôtre. **Relevé du 5 septembre 2026** : les trois phrases de titres 4 sont présentes, sous un témoin à 5 occurrences. La copie est à jour. **Rapporté le 30 septembre 2026** : la version de Notif 2 (la section Expo) a été republiée et vérifiée en ligne ; la date, les phrases et le témoin non rapportés. La mise à jour de Notif 5 (la notification d'une suggestion acceptée, le même jour) est à republier. **Trois mises à jour sont à republier ensemble au 1er octobre 2026** : celle de Notif 5, celle du libellé de la carte (30 septembre) et celle du partage de la carte en image (1er octobre, Top 5 partage 2). Une republication les porte, et le contrôle cherche une phrase de chacune, sans apostrophe pour que la typographie de kramdown ne la change pas : `quand une série que tu as suggérée est ajoutée`, `tu peux écrire le libellé de la carte de ton top 5`, `tu peux partager la carte de ton top 5 en image`, chacune à 1 au moins sous le témoin. **La mise à jour de Pro 3 (5 octobre 2026) est à republier** : la ligne « Nous renvoie » de la section RevenueCat et la ligne datée, qui disent la même chose ; le contrôle cherche `notre base garde la date de fin de ton Pro` (sans apostrophe), attendu à DEUX occurrences par `grep -o … | wc -l` sous le témoin, une par endroit, et la date en tête au 5 octobre 2026. **Republiée le 13 octobre 2026 à 07:09 UTC, la version de l'historique de lecture (`fb1eb86`), et relevée à 07:10** : la copie publiée était exactement la source de `53e8c6b`, donc rien à reporter avant de la remplacer (comparée par `diff --strip-trailing-cr` à chaque version de la source, la règle du sens unique) ; sous le témoin à 5, `un historique de ta lecture, jour par jour` à 2 (le paragraphe de la bibliothèque, l'entrée datée), `ta bibliothèque, ton historique de lecture, tes notes` à 1, `notre base garde un historique de ta lecture` à 1, la date en tête au 9 octobre 2026 ; et sur la page, sous leurs quatre témoins, aucun caractère banni ni aucune entité. La copie s'est faite par un clone du dépôt public, `index.md` et ce README remplacés par la source, un commit, un `push` ; Pages a servi la version neuve en moins d'une minute. **Republiée de nouveau le 13 octobre 2026 à 07:24 UTC, la promesse de l'inscription au lancement (`5da1f73`)** : la copie servie était la source de `fb1eb86` pour `index.md` et de `24f82d5` pour ce README, donc rien à reporter ; sous le témoin à 5, `un message pour la bêta` à 2 (le paragraphe du site, l'entrée datée), la date en tête au 13 octobre 2026, aucun caractère banni. **Republiée une troisième fois le même jour, à 07:34 UTC (`18d6c38`)**, pour la décision de l'utilisateur : les inscrits d'avant la promesse reçoivent aussi le message de la bêta, en exception déclarée, avec une désinscription par « STOP » ; la copie servie était la source de `9779a51`, donc rien à reporter ; sous le témoin à 5, `STOP` à 2 (le paragraphe du site, l'entrée datée), la phrase qui écartait ces inscrits absente, aucun caractère banni.
-
-## Ce qui se vérifie avant de publier
-
-- `contact@toonboxd.app` reçoit (redirection OVH, créée le 30 août 2026).
-- La région Supabase : Paris, lue au tableau de bord le 30 août 2026 (`docs/COLLECTE.md`, section 1). Fait, à ne pas relire sauf migration du projet.
-- Le SQL de la suppression de compte est appliqué : sans lui, le chemin que la page décrit rend « La suppression a échoué ».
-- La rangée « Ton identifiant » des Réglages est livrée (`48ed991`) : la page la cite trois fois, et `grep -o -F 'Ton identifiant' legal/index.md | wc -l` rend 3. Ce compte a rendu 1 la première fois qu'il a été joué, sur une page qui disait « dans les Réglages » sans nommer la rangée : un renvoi qui ne nomme pas ce qu'il désigne ne se contrôle pas.
-- Chaque chaîne de l'app citée dans la page se retrouve par `grep` dans `locales/fr.json`, jamais dans un document qui la répète ; celles d'une notification (Notif 2, 29 septembre 2026, la section Expo) dans `supabase/functions/envoyer-notifications/chaines.ts`, leur seul domicile.
-- **La page anglaise** : ses libellés de l'app se retrouvent dans `locales/en.json` ; les messages des notifications y sont cités **en français, tels qu'ils partent aujourd'hui**, donc dans `chaines.ts`, avec ce qu'ils disent en anglais entre parenthèses, sans guillemets (le commit 5 du plan les fera partir dans la langue de l'appareil, et les deux pages changeront alors). Restent légitimement hors des deux fichiers : les formes interpolées (« Read on … », « Search for chapter N »), le libellé d'iOS « Save Image », le signal « Do Not Track », la réponse « STOP », et « Signaler cette liste », le lien de la page publique d'une liste, cité tel qu'il s'affiche, en français, avec son sens en anglais entre parenthèses : il se retrouve dans `web/l/index.html`, son seul domicile, jusqu'au commit 7 du plan, qui rend cette page bilingue et fera changer la page anglaise. `grep -o -F 'Your User ID' legal/en/index.md | wc -l` rend 3, comme « Ton identifiant » dans la page française.
-- **Les deux pages disent la même chose** : leurs sections se répondent une à une (le même nombre de titres `##`, `grep -c '^## '` sur les deux), et la section des pays hors de France existe des deux côtés, puisqu'un lecteur du Québec dont l'iPhone est en français lit la page française.
-
-## Deux instruments, parce que le rendu peut introduire ce que la source ne contient pas
-
-Le cadratin et le point médian sont bannis du projet (`CLAUDE.md`, *Critical Rules*), et cette page est la plus publique du projet. Le balayage habituel lit la source ; il ne voit pas ce que le moteur de rendu ajoute. Jekyll rend le Markdown avec kramdown, dont la typographie automatique convertit `---` en cadratin et `--` en demi-cadratin **dans le texte** (pas dans le code) : la source serait propre, la page publiée ne le serait pas, et aucun `grep` du dépôt ne le verrait. L'aperçu Markdown de GitHub n'est pas kramdown et ne montre pas cette conversion : il ne vaut rien comme contrôle.
-
-**Sur la source**, avant la copie. Les deux lignes attendues sont les délimiteurs du front matter, et rien d'autre.
-
-Le fichier de motifs `/tmp/bannis.txt` se construit par la forme des *Critical Rules* de `CLAUDE.md`, son seul domicile (`py -3`, les deux caractères en clair, le chemin converti par `cygpath -w`), jamais par un `printf` à échappements, qui a menti le 5 septembre 2026 et survivait dans ce fichier jusqu'au 29 septembre 2026 (`DECISIONS.md` §5). La recopier ici mettrait les deux caractères dans `legal/`, dont le balayage attend « rien ». Ce qui reste ici : le contrôle de ses octets et le témoin tiers, joué AVANT.
-
-```
-od -An -tx1 /tmp/bannis.txt                                          # attendu : e2 80 94 0a c2 b7 0a
-grep -c -F -f /tmp/bannis.txt node_modules/react-native/README.md   # témoin tiers, AVANT : 5
-git ls-files -z --cached --others --exclude-standard legal/ | xargs -0 grep -n -I -F -f /tmp/bannis.txt   # attendu : rien
-grep -n -- '--' legal/index.md legal/en/index.md                    # attendu : exactement les lignes 1 et 3 de chacune (front matter)
-```
-
-**Sur la page publiée**, après chaque déploiement (Pages met jusqu'à une minute). Le contrôle cherche le caractère et ses formes d'entité, parce que kramdown peut émettre l'un ou l'autre selon `entity_output` :
-
-```
-URL='https://<compte>.github.io/<dépôt>/'
-grep -c -F -f /tmp/bannis.txt node_modules/react-native/README.md               # témoin tiers : 5
-printf '&mdash;\n' | grep -c -i -E '&mdash;|&#8212;|&#x2014;|&middot;|&#183;|&#xb7;'   # témoin forcé : 1
-curl -sL "$URL" | grep -c -F 'Toonboxd'                                          # la page est bien celle-là : > 0
-curl -sL "$URL" | grep -c -F '«'                                                # un caractère UTF-8 connu, en clair : > 0
-curl -sL "$URL" | grep -n -F -f /tmp/bannis.txt                                  # attendu : rien
-curl -sL "$URL" | grep -n -i -E '&mdash;|&#8212;|&#x2014;|&middot;|&#183;|&#xb7;'  # attendu : rien
-```
-
-Les quatre premières lignes sont les contrôles de l'instrument : sans elles, un `grep` qui rend zéro parce que la page n'est pas arrivée, parce que le terminal a perdu l'UTF-8, ou parce que le motif est faux, se lit comme un succès. Un zéro ne vaut que si le témoin à côté rend un.
+La source de ces fichiers est `legal/ancienne-adresse/` du dépôt de l'app, et celle de la politique `legal/`.
